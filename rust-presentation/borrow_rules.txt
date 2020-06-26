@@ -1,0 +1,3 @@
+    A reference may not live longer than what it referred to. This is obvious, since if it did, it would be referring to a garbage value.
+    If there's a mutable reference to a value, no other references, either mutable or immutable references, are allowed to the same value in that scope. A mutable reference is an exclusive borrow.
+    If there is no mutable reference to a thing, any number of immutable references to the same value are allowed in the scope.

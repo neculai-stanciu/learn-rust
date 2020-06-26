@@ -1,0 +1,15 @@
+@startuml openid
+title OpenID Connect
+autonumber
+
+participant "Relying Party" as RP
+participant "End-User" as EU
+participant "Open ID Provider" as OP
+
+
+RP --> OP: AuthN Request
+EU <--> OP: AuthN & AuthZ
+RP <-- OP: AuthN Response
+RP --> OP: UserInfo Request
+RP <-- OP: UserInfo Response
+@enduml
